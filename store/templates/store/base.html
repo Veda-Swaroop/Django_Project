@@ -11,17 +11,17 @@
 
     <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">ShopPrime</a>
+        <a class="navbar-brand" href="{% url 'store-home' %}">ShopPrime</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="{% url 'store-home' %}">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Products</a>
+            <a class="nav-link active" aria-current="page" href="{% url 'store-products' %}">Products</a>
             </li>
             <li class="nav-item dropdown">
             <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -35,15 +35,15 @@
             </ul>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" href="#">About</a>
+            <a class="nav-link active" href="{% url 'store-about' %}">About</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" href="#">Contact</a>
+            <a class="nav-link active" href="{% url 'store-contact' %}">Contact</a>
             </li>
         </ul>
         <form class="d-flex me-2">
-            <button class="btn btn-primary me-2" type="submit">Log In</button>
-            <button class="btn btn-primary ms-2" type="submit">Sign Up</button>
+            <button class="btn btn-success me-2" type="submit">Sign Up</button>
+            <button class="btn btn-primary ms-2" type="submit">Log In</button>
         </form>
         </div>
     </div>

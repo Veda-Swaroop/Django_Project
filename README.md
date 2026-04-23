@@ -1,0 +1,1 @@
+A multi vendor marketplace web application using django.
