@@ -5,14 +5,23 @@
 
     <h1>This is the Products Page</h1>
 
-    <div>
-        {% for item in data %}
-            <h3>{{ item.item_name }}</h3>
-            <h5>{{ item.price }}</h5>
-            <h4>{{ item.category }}</h4>
-            <p>{{ item.description }}</p>
 
-        {% endfor %}
+    <div class="card-group">
+    {% for item in data %}
+        <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ item.name }}</h5>
+                <h5 class="card-subtitle mb-2 text-body-secondary">Category: {{ item.category }}</h5>
+                <h5>Price: {{ item.price }} Rupees</h5>
+                <p class="card-text">{{ item.description }}</p>
+                <h6>date: {{ item.date_posted }}</h6>
+                <h6>by: {{ item.vendor }}</h6>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    {% endfor %}
     </div>
+
 
 {% endblock body %}
