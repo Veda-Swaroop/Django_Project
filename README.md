@@ -1,1 +1,1 @@
-A multi vendor marketplace web application built using django framework.
+Building a multi vendor marketplace web application using django framework.
